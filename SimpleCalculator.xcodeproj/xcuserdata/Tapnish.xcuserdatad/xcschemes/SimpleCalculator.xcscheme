@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CCF2FD491F43CC5C00B4C2F5"
+               BuildableName = "SimpleCalculator.app"
+               BlueprintName = "SimpleCalculator"
+               ReferencedContainer = "container:SimpleCalculator.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CCF2FD5D1F43CC5C00B4C2F5"
+               BuildableName = "SimpleCalculatorTests.xctest"
+               BlueprintName = "SimpleCalculatorTests"
+               ReferencedContainer = "container:SimpleCalculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CCF2FD681F43CC5C00B4C2F5"
+               BuildableName = "SimpleCalculatorUITests.xctest"
+               BlueprintName = "SimpleCalculatorUITests"
+               ReferencedContainer = "container:SimpleCalculator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CCF2FD491F43CC5C00B4C2F5"
+            BuildableName = "SimpleCalculator.app"
+            BlueprintName = "SimpleCalculator"
+            ReferencedContainer = "container:SimpleCalculator.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CCF2FD491F43CC5C00B4C2F5"
+            BuildableName = "SimpleCalculator.app"
+            BlueprintName = "SimpleCalculator"
+            ReferencedContainer = "container:SimpleCalculator.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CCF2FD491F43CC5C00B4C2F5"
+            BuildableName = "SimpleCalculator.app"
+            BlueprintName = "SimpleCalculator"
+            ReferencedContainer = "container:SimpleCalculator.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

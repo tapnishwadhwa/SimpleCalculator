@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					CCF2FD491F43CC5C00B4C2F5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = C6MXA48VRF;
 						ProvisioningStyle = Automatic;
 					};
 					CCF2FD5D1F43CC5C00B4C2F5 = {
@@ -414,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C6MXA48VRF;
 				INFOPLIST_FILE = SimpleCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tapnish.SimpleCalculator;
@@ -426,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C6MXA48VRF;
 				INFOPLIST_FILE = SimpleCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tapnish.SimpleCalculator;
