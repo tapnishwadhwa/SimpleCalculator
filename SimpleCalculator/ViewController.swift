@@ -11,36 +11,83 @@ import UIKit
 class ViewController: UIViewController {
     
     var numberOnScreen:Double = 0;
+    var prevNumber:Double = 0;
+    var processMath = false;
+    var operation = 0;
+    
     
     @IBOutlet weak var label: UILabel!
 
     @IBAction func numbers(_ sender: UIButton) {
         
-        label.text = label.text! + String(sender.tag-1)
-        numberOnScreen = Double(label.text!)!
+        if processMath == true
+        {
+            label.text = String(sender.tag-1)
+            numberOnScreen = Double(label.text!)!
+            processMath = false
+        }
+        else
+        {
+            label.text = label.text! + String(sender.tag-1)
+            numberOnScreen = Double(label.text!)!
+        }
+        
+       
     }
     
     
     @IBAction func buttons(_ sender: UIButton) {
+        
     
         if label.text != "" && sender.tag != 11 && sender.tag != 16{
             
+            prevNumber = Double(label.text!)!
+
             if sender.tag == 12{
-                //process divide
+                //process divide÷
+                label.text = "÷"
             }
             else if sender.tag == 13{
-                //process multiplication
+                label.text = "x"
             }
            else if sender.tag == 14{
-                //process minus
+                label.text = "-"
             }
            else if sender.tag == 15{
                 //process addition
+                label.text = "+"
+                
             }
+            operation = sender.tag
+            processMath = true
             
             
             
+        }
+        else if sender.tag == 16 {
             
+            if operation == 12{
+                // divide
+                label.text = String(prevNumber / numberOnScreen)
+            }
+           else if operation == 13{
+                // multiply
+                label.text = String(prevNumber * numberOnScreen)
+            }
+           else if operation == 14{
+                //subtraction
+                label.text = String(prevNumber - numberOnScreen)
+            }
+           else if operation == 15{
+                //addition
+                label.text = String(prevNumber + numberOnScreen)
+            }
+        }
+        else if sender.tag == 11 {
+            label.text = ""
+            prevNumber = 0;
+            numberOnScreen = 0;
+            operation = 0;
         }
     
     }
